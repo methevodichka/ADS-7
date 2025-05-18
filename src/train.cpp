@@ -25,6 +25,7 @@ void Train::addCar(bool light) {
         int Train::getLength() {
         newCar->next = first;
         first->prev = newCar;
+        }
     }
 }
 int Train::getLength() {
@@ -50,4 +51,4 @@ int Train::getLength() {
   }
 }
 int Train::getOpCount() { return countOp; }
-void Train::resetOpCount() { countOp = 0; }
+void Train::resetCountOp() { countOp = 0; }
