@@ -22,7 +22,7 @@ void Train::addCar(bool light) {
         Car* last = first->prev;
         last->next = newCar;
         newCar->prev = last;
-    @@ -53,6 +52,6 @@ int Train::getLength() {
+        int Train::getLength() {
         newCar->next = first;
         first->prev = newCar;
     }
